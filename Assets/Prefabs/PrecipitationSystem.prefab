@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8566612391792133763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6317226372728225326}
+  - component: {fileID: 1978425685667026078}
+  - component: {fileID: 6757899153545602144}
+  m_Layer: 0
+  m_Name: PrecipitationSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6317226372728225326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566612391792133763}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1978425685667026078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566612391792133763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35f4ced16481a4e42adb3bda40811945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GridSize: 10
+  TrackedTransform: {fileID: 0}
+--- !u!114 &6757899153545602144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566612391792133763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470ad7b8a3521a449aecae0ff307529f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 2800000, guid: 7fe7a4c57899c1943a93730cbdae7d99, type: 3}
+  noiseTexture: {fileID: 2800000, guid: 4ba83eddb0652b94cbd85d7ada82d706, type: 3}
+  WindStrenght: 0.448
+  WindYrotation: 0
+  PlayerTransform: {fileID: 0}
+  TurbulanceStrenght: 1000
+  meshSubdivision: 165
+  snow:
+    amount: 0.299
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    ColorVariation: {r: 0.3915094, g: 0.7266642, b: 1, a: 1}
+    FallSpeed: 0.2
+    CameraRange: {x: 0, y: 10}
+    FlutterFrequency: {x: 0.78, y: 0.93}
+    FlutterSpeed: {x: 0.76, y: 0.41}
+    FlutterMagnitude: {x: 0.18, y: 0.22}
+    SizeRange: {x: 0.01, y: 0.07}
